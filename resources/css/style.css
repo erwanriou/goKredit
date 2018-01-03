@@ -11,10 +11,18 @@ body {
 /* HEADER that is divide between the menu and the banner */
 
 header {
+  display: flex;
+  justify-content: space-between;
   background-image: url("../images/bannerBackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu {
@@ -22,20 +30,20 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0;
 }
 
 .menu ul {
   display: flex;
 }
 .mainMenu a, .loginMenu a {
-  font-size: 1,5rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 1rem;
 }
 
 .mainMenu a {
   color: black;
+  transition: all 0.2s ease;
 }
 
 .loginMenu a {
@@ -43,8 +51,48 @@ header {
   background-color: #00a9f5;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  transition: all 0.2s ease;
 }
 
+.loginMenu a i {
+  padding: 0 0.5rem;
+}
+
+.loginMenu a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.mainMenu a:hover {
+  text-decoration: none;
+  color: #00a9f5;
+}
+
+header h1 {
+  color: #00a9f5;
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+.h2block {
+  width: 30rem;
+}
+
+header h2 {
+  color:white;
+  font-weight: 500;
+  font-size: 3.5rem;
+  background-color: #00a9f5;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+
+.h2block img {
+  display: flex;
+  margin: 0 auto;
+}
 /* CONTENT */
 
 
