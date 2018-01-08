@@ -88,14 +88,48 @@ header h2 {
   margin-bottom: 0;
 }
 
-
 .h2block img {
   display: flex;
   margin: 0 auto;
 }
-/* CONTENT */
+/* CONTENT that is implemented in the google optimizer after*/
 
+.selector {
+  position: relative;
+  width: 600px;
+}
 
+.draggable {
+  position: absolute;
+}
+
+.selector .title {
+  color: #243d51;
+}
+
+.selector .line {
+  padding: 3rem 3rem;
+}
+
+.selector .line img {
+  width: 600px;
+}
+
+#krd {
+  display: flex;
+  cursor: move;
+  justify-content: center;
+  width: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 6rem;
+  background-color: #00a9f5;
+  color: white;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+}
 /* FOOTER */
 
 
