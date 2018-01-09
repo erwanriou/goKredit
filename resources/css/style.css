@@ -154,6 +154,8 @@ header h2 {
 
 .formTitle{
   text-align: center;
+  padding-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 .formContainer {
@@ -182,13 +184,91 @@ header h2 {
 }
 
 textarea:focus, input:focus{
-    outline: none;
+  outline: none;
 }
 
-.formIntput i {
+.formIntput i, .formCheck i {
   color: #dedede;
 }
 
+.formCheck {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.formCheck label {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.formCheck [type="checkbox"]:not(:checked),
+.formCheck [type="checkbox"]:checked {
+  display: none;
+}
+
+.formCheck [type="checkbox"]:not(:checked) + label,
+.formCheck [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.formCheck [type="checkbox"]:not(:checked) + label:before,
+.formCheck [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 1rem;
+  width: 20px; height: 20px;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+.formCheck [type="checkbox"]:not(:checked) + label:after,
+.formCheck [type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  left:0.5rem; top: 1rem;
+  font-size: 14px;
+  color: #00a9f5;
+  transition: all .2s;
+}
+
+.formCheck [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.formCheck [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.formText a {
+  color: #00a9f5;
+  font-size: 1.3rem;
+  padding: 6rem;
+}
+
+.formCTA {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 6rem;
+}
+
+.formCTA input {
+  border: none;
+  background-color: #00a9f5;
+  border-radius: 4rem;
+  padding: 1rem 9rem;
+  transition: all 0.3s ease;
+}
+
+.formCTA input:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
 /* FOOTER */
 
 
