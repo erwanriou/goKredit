@@ -12,6 +12,36 @@ body {
   display: flex;
 }
 
+
+/* POPup configuration made with jquery */
+
+.popup {
+  display: none;
+  position: absolute;
+  text-align: center;
+  z-index: 150;
+  top: 0;
+  right: -0.5rem;
+}
+
+.popup p {
+  position: absolute;
+  background-Color: #243d51;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  bottom: 0;
+  left: -5rem;
+  width: 20rem;
+}
+
+.popup img {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  height: 1rem;
+}
+
 /* HEADER that is divide between the menu and the banner */
 
 header {
@@ -174,6 +204,7 @@ header h2 {
 
 .formIntput {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   width: 30rem;
@@ -336,7 +367,7 @@ textarea:focus, input:focus{
 }
 
 .faq {
-  height: 252px;
+  height: 260px;
   padding-right: 3rem;
 }
 
