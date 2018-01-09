@@ -12,6 +12,7 @@ body {
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   background-image: url("../images/bannerBackground.jpg");
   background-repeat: no-repeat;
@@ -22,7 +23,6 @@ header {
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .menu {
@@ -30,6 +30,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .menu ul {
@@ -69,13 +70,17 @@ header {
 }
 
 header h1 {
+  margin-top: 7rem;
   color: #00a9f5;
   font-weight: 600;
   font-size: 5rem;
 }
 
 .h2block {
+  z-index: 100;
   width: 30rem;
+  position: absolute;
+  bottom: -1.5rem;
 }
 
 header h2 {
@@ -91,19 +96,24 @@ header h2 {
 .h2block img {
   display: flex;
   margin: 0 auto;
+  height: 1.5rem;
 }
-/* CONTENT that is implemented in the google optimizer after*/
+/* SELECTOR that is implemented in the google optimizer after*/
 
 .selector {
   position: relative;
-  width: 600px;
+  width: 700px;
+  padding: 2rem;
+  border: 1px solid #f0f0f0;
 }
 
 .draggable {
   position: absolute;
+  padding: 0 3rem;
 }
 
 .selector .title {
+  padding: 0 3rem;
   color: #243d51;
 }
 
@@ -115,21 +125,70 @@ header h2 {
   width: 600px;
 }
 
+.selector .legend {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
 #krd {
+  font-size: 1.8rem;
   display: flex;
   cursor: move;
   justify-content: center;
-  width: 5rem;
+  width: 3rem;
   padding: 1rem 2rem;
   border-radius: 6rem;
   background-color: #00a9f5;
   color: white;
 }
+/* FORM that is implemented in the google optimizer after*/
 
-.legend {
+.form {
+  position: relative;
+  top: -1px;
+  width: 700px;
+  padding: 2rem;
+  border: 1px solid #f0f0f0;
+}
+
+.formTitle{
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.formIntput {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  border: 1px solid #dedede;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin: 1rem;
 }
+
+.formIntput input {
+  border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.formIntput i {
+  color: #dedede;
+}
+
 /* FOOTER */
 
 
