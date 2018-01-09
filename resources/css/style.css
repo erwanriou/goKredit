@@ -5,7 +5,11 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1100px;
+}
+
+.content {
+  display: flex;
 }
 
 /* HEADER that is divide between the menu and the banner */
@@ -245,10 +249,16 @@ textarea:focus, input:focus{
   transform: scale(1);
 }
 
-.formText a {
+.formText a, .formText2 a {
   color: #00a9f5;
   font-size: 1.3rem;
   padding: 6rem;
+}
+
+.formText2  {
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+  text-align: center;
 }
 
 .formCTA {
@@ -269,6 +279,92 @@ textarea:focus, input:focus{
 .formCTA input:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+/* SIDEBAR the blue top text */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.bluebox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00a9f5;
+  height: 215px;
+  text-align: center;
+  color: white;
+}
+
+.bluebox h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.bluebox h2 {
+  font-size: 6rem;
+  margin-top: 0;
+}
+
+.bluebox img {
+  position: absolute;
+  left: -2rem;
+}
+/* SIDEBAR the grey text */
+
+.textbox, .contact, .faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  padding: 0 5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.textbox, .contact {
+  height: 215px;
+}
+
+.faq {
+  height: 252px;
+  padding-right: 3rem;
+}
+
+.contact h3, .faq h3 {
+  font-size: 2rem;
+  color: #00a9f5;
+  padding: 1rem 0;
+  margin-top: 0;
+}
+
+.contact p {
+  line-height: 1.5rem;
+  color: #66686a;
+}
+
+.contact i {
+  padding-right: 1rem;
+  color: #a4a4a4;
+}
+
+.faq li {
+  padding: 0.7rem 0;
+  color: #66686a;
+}
+
+.faq span {
+  padding: 0.3rem 1rem;
+  background-color: #00a9f5;
+  color: white;
+  border-radius: 3rem;
+}
+
+
 /* FOOTER */
 
 
