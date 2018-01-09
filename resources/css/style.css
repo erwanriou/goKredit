@@ -364,8 +364,97 @@ textarea:focus, input:focus{
   border-radius: 3rem;
 }
 
+/* PARTNERS here a small configuration for the partner container */
 
-/* FOOTER */
+.partner {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
 
+/* SubFooter here a small configuration for the subfooter container */
 
+.SubFooter {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-image: url("../images/footerBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.subFooterContainer {
+  display: flex;
+}
+
+.textblock {
+  padding: 4rem;
+  width: 400px;
+}
+
+.textblock h3 {
+  color: #00a9f5;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.textblock a {
+  color: #00a9f5;
+}
+
+/* FOOTER the real footer configuration*/
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.adress {
+  font-size: 1.2rem;
+  width: 300px;
+}
+
+.adress h4, .medias h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.medias {
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.medias h4 i {
+  color: #00a9f5;
+  margin: 0;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+.medias i {
+  width: 3.1rem;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 3rem;
+  color: white;
+  background-color: #aaabab;
+}
+
+.footer2 {
+  text-align: center;
+  padding: 3rem 14rem;
+}
+
+.footer2 a:before {
+  content: "- "
+}
+
+.copyrights {
+  padding-top: 3rem;
+  color: #aaabab;
+  font-size: 1rem;
+}
 /* MEDIA */
