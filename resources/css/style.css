@@ -195,6 +195,11 @@ textarea:focus, input:focus{
   color: #dedede;
 }
 
+.formIntput i:hover, .formCheck i:hover {
+  color: #00a9f5;
+  cursor: pointer;
+}
+
 .formCheck {
   display: flex;
   justify-content: flex-start;
@@ -249,10 +254,10 @@ textarea:focus, input:focus{
   transform: scale(1);
 }
 
-.formText a, .formText2 a {
+.formText p, .formText2 a {
   color: #00a9f5;
   font-size: 1.3rem;
-  padding: 6rem;
+  padding: 0 6rem;
 }
 
 .formText2  {
@@ -352,6 +357,14 @@ textarea:focus, input:focus{
   color: #a4a4a4;
 }
 
+.contact a {
+  color: #66686a;
+}
+
+.contact a:hover {
+  color: #00a9f5;
+}
+
 .faq li {
   padding: 0.7rem 0;
   color: #66686a;
@@ -427,6 +440,10 @@ textarea:focus, input:focus{
   text-align: right;
 }
 
+.medias a {
+  color: black;
+}
+
 .medias h4 i {
   color: #00a9f5;
   margin: 0;
@@ -437,7 +454,7 @@ textarea:focus, input:focus{
 .medias i {
   width: 3.1rem;
   padding: 1rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   border-radius: 3rem;
   color: white;
   background-color: #aaabab;
@@ -452,7 +469,16 @@ textarea:focus, input:focus{
   content: "- "
 }
 
-.copyrights {
+.footer2 a {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.footer2 a:hover {
+  color: #00a9f5;
+}
+
+.copyrights, .copyrights a {
   padding-top: 3rem;
   color: #aaabab;
   font-size: 1rem;
